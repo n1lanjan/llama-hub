@@ -74,15 +74,23 @@
   },
   "SimpleCSVReader": {
     "id": "file/simple_csv",
-    "author": "vguillet"
+    "author": "vguillet",
+    "keywords": ["spreadsheet"]
   },
   "PagedCSVReader": {
     "id": "file/paged_csv",
-    "author": "thejessezhang"
+    "author": "thejessezhang",
+    "keywords": ["spreadsheet"]
   },
   "PandasCSVReader": {
     "id": "file/pandas_csv",
-    "author": "ephe-meral"
+    "author": "ephe-meral",
+    "keywords": ["spreadsheet"]
+  },
+  "SDLReader": {
+    "id": "file/sdl",
+    "author": "ajhofmann",
+    "keywords": ["graphql", "schema"]
   },
   "SimpleWebPageReader": {
     "id": "web/simple_web",
@@ -106,6 +114,11 @@
     "id": "web/rss",
     "author": "bborn",
     "keywords": ["feed", "rss", "atom"]
+  },
+  "SitemapReader": {
+    "id": "web/sitemap",
+    "author": "selamanse",
+    "keywords": ["sitemap", "website", "seo"]
   },
   "DatabaseReader": {
     "id": "database",
@@ -200,7 +213,8 @@
   },
   "YoutubeTranscriptReader": {
     "id": "youtube_transcript",
-    "author": "ravi03071991"
+    "author": "ravi03071991",
+    "keywords": ["video"]
   },
   "MakeWrapper": {
     "id": "make_com"
@@ -220,7 +234,7 @@
   "UnstructuredReader": {
     "id": "file/unstructured",
     "author": "thejessezhang",
-    "keywords": ["sec", "html", "eml", "10k", "10q", "unstructured.io"]
+    "keywords": ["sec", "html", "eml", "10k", "10q", "unstructured.io", "yaml", "yml"]
   },
   "KnowledgeBaseWebReader": {
     "id": "web/knowledge_base",
@@ -246,6 +260,11 @@
     "id": "dad_jokes",
     "author": "sidu",
     "keywords": ["jokes", "dad jokes"]
+  },
+  "WordLiftLoader": {
+    "id": "wordlift",
+    "author": "msftwarelab",
+    "keywords": ["wordlift", "knowledge graph", "graphql", "structured data", "seo"]
   },
   "WhatsappChatLoader": {
     "id": "whatsapp",
@@ -296,7 +315,8 @@
   },
   "PandasExcelReader": {
     "id": "file/pandas_excel",
-    "author": "maccarini"
+    "author": "maccarini",
+    "keywords": ["spreadsheet"]
   },
   "ZendeskReader": {
     "id": "zendesk",
@@ -388,6 +408,11 @@
     "author": "emmanuel-oliveira",
     "keywords": ["pdf", "flat", "flattened"]
   },
+    "PDFMinerReader": {
+    "id": "file/pdf_miner",
+    "author": "thunderbug1",
+    "keywords": ["pdf"]
+  },
   "MilvusReader": {
     "id": "milvus",
     "author": "filip-halt"
@@ -435,6 +460,11 @@
     "id": "file/image_blip2",
     "author": "FarisHijazi",
     "keywords": ["image"]
+  },
+  "ImageTabularChartReader": {
+    "id": "file/image_deplot",
+    "author": "jon-chuang",
+    "keywords": ["image", "chart", "tabular", "figure"]
   },
   "IPYNBReader": {
     "id": "file/ipynb",
@@ -526,5 +556,109 @@
     "id": "firestore",
     "author": "rayzhudev",
     "keywords": ["firestore", "datastore"]
+  },
+  "KibelaReader": {
+    "id": "kibela",
+    "author": "higebu"
+  },
+  "GitHubRepositoryIssuesReader": {
+    "id": "github_repo_issues",
+    "author": "moncho",
+    "keywords": [
+      "github",
+      "repository",
+      "issues"
+    ],
+    "extra_files": ["github_client.py", "__init__.py"]
+  },
+  "FirebaseRealtimeDatabaseReader": {
+    "id": "firebase_realtimedb",
+    "author": "ajay",
+    "keywords": [
+      "firebase",
+      "realtimedb",
+      "database"
+    ]
+  },
+  "FeishuDocsReader": {
+    "id": "feishu_docs",
+    "author": "ma-chengcheng"
+  },
+  "GoogleKeepReader": {
+    "id": "google_keep",
+    "author": "pycui",
+    "keywords": [
+      "google keep",
+      "google notes"
+    ]
+  },
+  "SingleStoreReader": {
+    "id": "singlestore",
+    "author": "singlestore",
+    "keywords": [
+      "singlestore",
+      "memsql"
+    ]
+  },
+  "SECFilingsLoader":{
+    "id":"sec_filings",
+    "author":"Athe-kunal",
+    "keywords":[
+      "finance",
+      "SEC Filings",
+      "10-K",
+      "10-Q"
+    ]
+  },
+  "GuruReader": {
+    "id": "guru",
+    "author": "mcclain-thiel",
+    "keywords": [
+      "guru",
+      "knowledge base",
+      "getguru"
+    ]
+  },
+  "MinioReader": {
+    "id": "minio",
+    "author": "semoal",
+    "keywords": [
+      "minio",
+      "bucket",
+      "storage"
+    ]
+  },
+  "NewsArticleReader": {
+    "id": "web/news",
+    "author": "ruze00",
+    "keywords": [
+      "news",
+      "article"
+    ]
+  },
+  "RssNewsReader": {
+    "id": "web/rss_news",
+    "author": "ruze00",
+    "keywords": [
+      "news",
+      "article",
+      "rss",
+      "feed"
+    ]
+  },
+  "SemanticScholarReader": {
+    "id": "semanticscholar",
+    "author": "shauryr",
+    "keywords": [
+      "semantic",
+      "scholar",
+      "research",
+      "paper"
+    ]
+  },
+  "ZepReader": {
+    "id": "zep",
+    "author": "zep",
+    "keywords": ["zep", "retriever", "memory", "storage"]
   }
 }

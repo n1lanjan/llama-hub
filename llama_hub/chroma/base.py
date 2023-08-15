@@ -23,9 +23,6 @@ class ChromaReader(BaseReader):
         persist_directory: str,
     ) -> None:
         """Initialize with parameters."""
-        import_err_msg = (
-            "`chromadb` package not found, please run `pip install chromadb`"
-        )
         import chromadb  # noqa: F401
         from chromadb.config import Settings
 
@@ -34,7 +31,7 @@ class ChromaReader(BaseReader):
 
         self._client = chromadb.Client(
             Settings(
-                chroma_db_impl="duckdb+parquet", persist_directory=persist_directory
+                is_persistent=True, persist_directory=persist_directory
             )
         )
         self._collection = self._client.get_collection(collection_name)
